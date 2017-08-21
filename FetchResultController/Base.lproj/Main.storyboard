@@ -5,13 +5,14 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Master Controller-->
         <scene sceneID="sol-9b-Dvy">
             <objects>
-                <tableViewController id="e08-aL-7QS" customClass="TableViewController" customModule="FetchResultController" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="e08-aL-7QS" customClass="MasterController" customModule="FetchResultController" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H7u-AQ-JVl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,6 +25,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="M1L-Gv-xeS" kind="show" identifier="showDetail" id="puY-XH-qNl"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,6 +40,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0y-MZ-G0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905" y="260"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="pin-0c-5UP">
+            <objects>
+                <viewController id="M1L-Gv-xeS" customClass="DetailViewController" customModule="FetchResultController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="LPL-cb-sr8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rgK-TV-rjf">
+                                <rect key="frame" x="112.5" y="313.5" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="66D-YV-owL"/>
+                                    <constraint firstAttribute="width" constant="150" id="gtH-3d-VQN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rgK-TV-rjf" firstAttribute="centerY" secondItem="LPL-cb-sr8" secondAttribute="centerY" id="3IL-sh-oJ7"/>
+                            <constraint firstItem="rgK-TV-rjf" firstAttribute="centerX" secondItem="LPL-cb-sr8" secondAttribute="centerX" id="YJQ-jr-agU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mc3-vI-avK"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="EOU-Al-9Qn"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="Z3u-Kr-mNp"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="rgK-TV-rjf" id="E3w-Qk-sih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJx-Jc-57T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="287"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xff-aN-Jyk">

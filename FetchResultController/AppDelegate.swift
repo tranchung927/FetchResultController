@@ -11,6 +11,8 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    static let shared: AppDelegate = AppDelegate()
 
     var window: UIWindow?
 

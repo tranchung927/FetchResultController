@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100F7B351F4A59C8004DB087 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F7B341F4A59C8004DB087 /* DetailViewController.swift */; };
 		101CCC101F418BE60053500D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CCC0F1F418BE60053500D /* AppDelegate.swift */; };
 		101CCC151F418BE60053500D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101CCC131F418BE60053500D /* Main.storyboard */; };
 		101CCC181F418BE60053500D /* FetchResultController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 101CCC161F418BE60053500D /* FetchResultController.xcdatamodeld */; };
 		101CCC1A1F418BE60053500D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101CCC191F418BE60053500D /* Assets.xcassets */; };
 		101CCC1D1F418BE60053500D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101CCC1B1F418BE60053500D /* LaunchScreen.storyboard */; };
-		101CCC251F418FFA0053500D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CCC241F418FFA0053500D /* TableViewController.swift */; };
+		101CCC251F418FFA0053500D /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CCC241F418FFA0053500D /* MasterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100F7B341F4A59C8004DB087 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		101CCC0C1F418BE60053500D /* FetchResultController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchResultController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101CCC0F1F418BE60053500D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		101CCC141F418BE60053500D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -23,7 +25,7 @@
 		101CCC191F418BE60053500D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101CCC1C1F418BE60053500D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101CCC1E1F418BE60053500D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		101CCC241F418FFA0053500D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		101CCC241F418FFA0053500D /* MasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				101CCC0F1F418BE60053500D /* AppDelegate.swift */,
-				101CCC241F418FFA0053500D /* TableViewController.swift */,
+				101CCC241F418FFA0053500D /* MasterController.swift */,
+				100F7B341F4A59C8004DB087 /* DetailViewController.swift */,
 				101CCC131F418BE60053500D /* Main.storyboard */,
 				101CCC191F418BE60053500D /* Assets.xcassets */,
 				101CCC1B1F418BE60053500D /* LaunchScreen.storyboard */,
@@ -139,7 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				101CCC181F418BE60053500D /* FetchResultController.xcdatamodeld in Sources */,
-				101CCC251F418FFA0053500D /* TableViewController.swift in Sources */,
+				101CCC251F418FFA0053500D /* MasterController.swift in Sources */,
+				100F7B351F4A59C8004DB087 /* DetailViewController.swift in Sources */,
 				101CCC101F418BE60053500D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +322,7 @@
 				101CCC231F418BE60053500D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
